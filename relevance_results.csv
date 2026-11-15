@@ -1,0 +1,16 @@
+Question,Strategy,Relevance
+What is RAG?,Fixed-size,Relevant
+What is RAG?,Overlapping,Partially relevant
+What is RAG?,Structure-aware,Not relevant
+How does RAG work?,Fixed-size,Partially relevant
+How does RAG work?,Overlapping,Relevant
+How does RAG work?,Structure-aware,Not relevant
+What is overlapping chunking?,Fixed-size,Relevant
+What is overlapping chunking?,Overlapping,Relevant
+What is overlapping chunking?,Structure-aware,Relevant
+Advantages of structure-aware?,Fixed-size,Relevant
+Advantages of structure-aware?,Overlapping,Relevant
+Advantages of structure-aware?,Structure-aware,Relevant
+Challenges of RAG?,Fixed-size,Not relevant
+Challenges of RAG?,Overlapping,Not relevant
+Challenges of RAG?,Structure-aware,Not relevant

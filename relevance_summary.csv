@@ -1,0 +1,4 @@
+Strategy,Not relevant,Partially relevant,Relevant
+Fixed-size,1,1,3
+Overlapping,1,1,3
+Structure-aware,3,0,2

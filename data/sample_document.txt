@@ -1,0 +1,47 @@
+# Introduction to Retrieval-Augmented Generation (RAG)
+
+## 1. What is RAG?
+Retrieval-Augmented Generation is a technique that combines information retrieval with large language models. It allows a system to retrieve relevant information from external documents before generating an answer. This helps provide more contextually accurate responses.
+
+## 2. How RAG Works
+A typical RAG system has two major phases: indexing and retrieval.
+
+During indexing, documents are loaded, divided into smaller chunks, converted into numerical embeddings, and stored in a vector database.
+
+During retrieval, a user's question is converted into an embedding. The system searches the vector database for similar chunks and retrieves the most relevant information.
+
+## 3. Fixed-Size Chunking
+Fixed-size chunking divides a document into pieces containing a specified number of characters or tokens. Each chunk has approximately the same size.
+
+The main advantage is simplicity and predictable chunk sizes. However, a chunk may end in the middle of a sentence or paragraph, which can separate related information.
+
+## 4. Overlapping Chunking
+Overlapping chunking creates chunks that share some content with neighboring chunks. For example, a chunk may contain 500 characters while the next chunk begins 100 characters before the previous chunk ends.
+
+This preserves context across chunk boundaries. However, it can create duplicate information and increase storage requirements.
+
+## 5. Structure-Aware Chunking
+Structure-aware chunking uses document organization, such as headings, paragraphs, and sections, to determine chunk boundaries.
+
+It aims to keep related information together. This can improve contextual relevance, although document structures may vary and require additional processing.
+
+## 6. Embeddings and Vector Databases
+An embedding model converts text into a numerical vector. Similar meanings are represented by vectors that are close together in the embedding space.
+
+FAISS is a library for efficient similarity search. It can store vectors and retrieve relevant entries based on similarity.
+
+## 7. Evaluation of Chunking Strategies
+Chunking strategies can be compared using retrieval relevance, answer relevance, context preservation, processing time, and the number of generated chunks.
+
+A good strategy should retrieve useful information without creating unnecessarily large or fragmented chunks.
+
+## 8. Applications of RAG
+RAG can be used in document question-answering systems, educational assistants, customer support, enterprise knowledge search, and research tools.
+
+## 9. Challenges and Future Scope
+Important challenges include selecting suitable chunk sizes, preserving context, reducing retrieval noise, and evaluating answer quality.
+
+Future improvements may include semantic chunking, hybrid search, reranking, and adaptive chunk sizes.
+
+## 10. Conclusion
+Document chunking is an important part of RAG systems. Fixed-size, overlapping, and structure-aware chunking each have advantages and limitations. Comparing them experimentally can help identify a suitable strategy for a particular application.

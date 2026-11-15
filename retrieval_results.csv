@@ -1,0 +1,16 @@
+Question,Strategy,Distance
+What is RAG?,Fixed-size,0.783
+What is RAG?,Overlapping,0.7333
+What is RAG?,Structure-aware,0.5688
+How does RAG work?,Fixed-size,0.8584
+How does RAG work?,Overlapping,0.644
+How does RAG work?,Structure-aware,0.6171
+What is overlapping chunking?,Fixed-size,0.3872
+What is overlapping chunking?,Overlapping,0.247
+What is overlapping chunking?,Structure-aware,0.247
+Advantages of structure-aware?,Fixed-size,0.4624
+Advantages of structure-aware?,Overlapping,0.4635
+Advantages of structure-aware?,Structure-aware,0.4635
+Challenges of RAG?,Fixed-size,0.9488
+Challenges of RAG?,Overlapping,0.8779
+Challenges of RAG?,Structure-aware,0.6997
